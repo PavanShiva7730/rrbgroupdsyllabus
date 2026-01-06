@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Syllabus</title>
+
+<style>
+:root{
+  --border:#e5e7eb;
+  --muted:#6b7280;
+  --blue:#2563eb;
+  --green:#16a34a;
+  --bg:#f8fafc;
+}
+
+*{box-sizing:border-box;font-family:Inter,Arial,sans-serif}
+body{background:var(--bg);padding:24px}
+
+.card{
+  max-width:900px;
+  margin:auto;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:10px;
+}
+
+/* HEADER */
+.header{
+  padding:22px 26px;
+  border-bottom:1px solid var(--border);
+}
+.header h2{margin:0;font-size:20px;font-weight:600}
+.header p{margin:6px 0 0;font-size:13px;color:var(--muted)}
+
+/* SECTION LIST */
+.section{border-top:1px solid var(--border)}
+.section-head{
+  padding:18px 26px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:pointer;
+}
+.left{display:flex;gap:14px}
+.index{font-weight:600}
+.title-wrap{display:flex;flex-direction:column;gap:4px}
+.title{font-size:14px;font-weight:600}
+.meta{font-size:12px;color:var(--muted)}
+.chevron{transition:.3s}
+.section.active .chevron{transform:rotate(180deg)}
+
+.section-body{
+  display:none;
+  border-top:1px solid var(--border);
+  background:#f9fafb;
+}
+
+/* ITEMS */
+.item{
+  padding:14px 26px;
+  border-top:1px solid var(--border);
+  font-size:14px;
+}
+.item a{text-decoration:none;color:var(--blue);font-weight:500}
+
+/* LESSON */
+.lesson{
+  padding:14px 26px;
+  border-top:1px solid var(--border);
+}
+.lesson-main{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.lesson-title{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  cursor:pointer;
+  font-weight:500;
+}
+.play{
+  width:36px;height:36px;border-radius:50%;
+  background:#e0e7ff;color:var(--blue);
+  display:flex;align-items:center;justify-content:center;
+}
+.quiz a{font-size:12px;color:var(--green);font-weight:600;text-decoration:none}
+
+.video-box{display:none;margin-top:12px}
+.video-box iframe{width:100%;height:260px;border-radius:10px;border:none}
+
+audio{width:100%;margin-top:8px}
+
+.lesson.active .video-box{display:block}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="header">
+  <h2>Syllabus</h2>
+  <p>Sections • 655 lessons • 113 Quizzes</p>
+</div>
+
+<!-- 01 INTRODUCTION -->
+<div class="section">
+<div class="section-head" onclick="toggle(this)">
+<div class="left">
+<div class="index">01</div>
+<div class="title-wrap">
+<div class="title">Introduction</div>
+<div class="meta">Audio & PDFs</div>
+</div>
+</div>
+<div class="chevron">⌄</div>
+</div>
+
+<div class="section-body">
+<div class="item">
+🎧 Syllabus Overview Audio
+<audio controls>
+<source src="https://blogmedia.testbook.com/blog/wp-content/uploads/2026/01/file-0cf93ed7.mp3">
+</audio>
+</div>
+
+<div class="item">📄 <a target="_blank" href="https://testbook.com/login?redirect_url=https:%2F%2Ftestbook.com%2Fnew-wp-pdf%2Fnew-wp-pdf.php%3Ftarget_slug%3Drrb-group-d%26target_child_slug%3Dsyllabus">Syllabus PDF</a></div>
+
+<div class="item">📄 <a target="_blank" href="https://testbook.com/pdf-viewer?u=https:%2F%2Fcdn.testbook.com/1763452491173-RRB%20Group%20D%20Most%20Asked%20Topics%20Questions%20Rebranded.pdf">Most Asked Questions</a></div>
+
+<div class="item">📄 <a target="_blank" href="https://testbook.com/pdf-viewer?u=https:%2F%2Fcdn.testbook.com/1763451546607-Testbook%20Railway%20General%20Science%20Booster%20E%20Book%20Rebranded.pdf">Science Booster E-Book</a></div>
+</div>
+</div>
+
+<!-- 02 MATHEMATICS -->
+<div class="section">
+<div class="section-head" onclick="toggle(this)">
+<div class="left">
+<div class="index">02</div>
+<div class="title-wrap">
+<div class="title">Mathematics</div>
+<div class="meta">10 Video Classes</div>
+</div>
+</div>
+<div class="chevron">⌄</div>
+</div>
+
+<div class="section-body">
+<div class="lesson" data-id="vM0_indUN58"><div class="lesson-main"><div class="lesson-title"><div class="play">▶</div>BODMAS</div></div><div class="video-box"><iframe></iframe></div></div>
+<div class="lesson" data-id="9GqBjS-0IuI"><div class="lesson-main"><div class="lesson-title"><div class="play">▶</div>Decimal</div></div><div class="video-box"><iframe></iframe></div></div>
+<div class="lesson" data-id="M735YXcDkOg"><div class="lesson-main"><div class="lesson-title"><div class="play">▶</div>Fraction</div></div><div class="video-box"><iframe></iframe></div></div>
+<div class="lesson" data-id="JhYOdY2Hw0s"><div class="lesson-main"><div class="lesson-title"><div class="play">▶</div>Surds & Indices</div></div><div class="video-box"><iframe></iframe></div></div>
+<div class="lesson" data-id="vdB4Sugk92c"><div class="lesson-main"><div class="lesson-title"><div class="play">▶</div>Number System</div></div><div class="video-box"><iframe></iframe></div></div>
+<div class="lesson" data-id="AFBtSMVWwE4"><div class="lesson-main"><div class="lesson-title"><div class="play">▶</div>Divisibility</div></div><div class="video-box"><iframe></iframe></div></div>
+<div class="lesson" data-id="2IRra-vZmAI"><div class="lesson-main"><div class="lesson-title"><div class="play">▶</div>PYQs</div></div><div class="video-box"><iframe></iframe></div></div>
+<div class="lesson" data-id="UbBXRnE1stE"><div class="lesson-main"><div class="lesson-title"><div class="play">▶</div>Maths Basics</div></div><div class="video-box"><iframe></iframe></div></div>
+<div class="lesson" data-id="s_1R39UfjIE"><div class="lesson-main"><div class="lesson-title"><div class="play">▶</div>Boats & Streams</div></div><div class="video-box"><iframe></iframe></div></div>
+<div class="lesson" data-id="NBE7T10_Oks"><div class="lesson-main"><div class="lesson-title"><div class="play">▶</div>Advanced Maths</div></div><div class="video-box"><iframe></iframe></div></div>
+</div>
+</div>
+
+<!-- 03 PHYSICS -->
+<div class="section">
+<div class="section-head" onclick="toggle(this)">
+<div class="left">
+<div class="index">03</div>
+<div class="title-wrap">
+<div class="title">Physics</div>
+<div class="meta">10 Classes • Quizzes</div>
+</div>
+</div>
+<div class="chevron">⌄</div>
+</div>
+
+<div class="section-body">
+<div class="lesson" data-id="PVeVXKPdHSs"><div class="lesson-main"><div class="lesson-title"><div class="play">▶</div>Magnetism</div><div class="quiz"><a target="_blank" href="https://testbook.com/pass-pro">Quiz</a></div></div><div class="video-box"><iframe></iframe></div></div>
+<div class="lesson" data-id="wkv0295TMjA"><div class="lesson-main"><div class="lesson-title"><div class="play">▶</div>Electricity</div><div class="quiz"><a target="_blank" href="https://testbook.com/pass-pro">Quiz</a></div></div><div class="video-box"><iframe></iframe></div></div>
+<div class="lesson" data-id="mWtf5nfJde8"><div class="lesson-main"><div class="lesson-title"><div class="play">▶</div>Heat</div><div class="quiz"><a target="_blank" href="https://testbook.com/pass-pro">Quiz</a></div></div><div class="video-box"><iframe></iframe></div></div>
+<div class="lesson" data-id="G1nqqm24cTA"><div class="lesson-main"><div class="lesson-title"><div class="play">▶</div>Light</div><div class="quiz"><a target="_blank" href="https://testbook.com/pass-pro">Quiz</a></div></div><div class="video-box"><iframe></iframe></div></div>
+<div class="lesson" data-id="xljmIZWSaHY"><div class="lesson-main"><div class="lesson-title"><div class="play">▶</div>Motion</div><div class="quiz"><a target="_blank" href="https://testbook.com/pass-pro">Quiz</a></div></div><div class="video-box"><iframe></iframe></div></div>
+</div>
+</div>
+
+<!-- 04 SAMPLE BOOKS -->
+<div class="section">
+<div class="section-head" onclick="toggle(this)">
+<div class="left">
+<div class="index">04</div>
+<div class="title-wrap">
+<div class="title">Sample Books</div>
+<div class="meta">Free PDFs</div>
+</div>
+</div>
+<div class="chevron">⌄</div>
+</div>
+
+<div class="section-body">
+<div class="item">📘 <a target="_blank" href="https://testbook.com/pdf-viewer?u=https://cdn.testbook.com/1767725437495-Sample%20%286%29.pdf">Reasoning – 3000+ MCQs</a></div>
+<div class="item">📘 <a target="_blank" href="https://testbook.com/pdf-viewer?u=https://cdn.testbook.com/1767725437495-Sample%20%287%29.pdf">General Awareness – 3000+ MCQs</a></div>
+<div class="item">📘 <a target="_blank" href="https://testbook.com/pdf-viewer?u=https://cdn.testbook.com/1767725437495-Sample%20%288%29.pdf">General Science – 3000+ MCQs</a></div>
+<div class="item">📘 <a target="_blank" href="https://testbook.com/pdf-viewer?u=https://cdn.testbook.com/1767725437494-Sample%20%289%29.pdf">Mathematics – 3000+ MCQs</a></div>
+</div>
+</div>
+
+</div>
+
+<script>
+function toggle(el){
+  const sec = el.parentElement;
+  const body = sec.querySelector(".section-body");
+  sec.classList.toggle("active");
+  body.style.display = sec.classList.contains("active") ? "block" : "none";
+}
+
+document.querySelectorAll(".lesson-title").forEach(t=>{
+  t.onclick=()=>{
+    const lesson = t.closest(".lesson");
+    const id = lesson.dataset.id;
+
+    document.querySelectorAll(".lesson").forEach(l=>{
+      if(l!==lesson){
+        l.classList.remove("active");
+        l.querySelector("iframe").src="";
+      }
+    });
+
+    lesson.classList.toggle("active");
+    lesson.querySelector("iframe").src =
+      lesson.classList.contains("active")
+      ? "https://www.youtube.com/embed/"+id+"?autoplay=1"
+      : "";
+  };
+});
+</script>
+
+</body>
+</html>
